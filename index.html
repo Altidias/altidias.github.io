@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="/tailwind-ec8455b79b87a3b3.css" integrity="sha384&#x2D;krMSOj9lh4UCluXrVH0N23sCCGzrVXKARPMlQqEns5X2GPr0clnS8zH2rX9f0l0s"/>
+    <base href="/" />
+    
+<script type="module">
+import init, * as bindings from '/mortar-map-2f42498b32815f0b.js';
+const wasm = await init({ module_or_path: '/mortar-map-2f42498b32815f0b_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+    <title>Yew App</title>
+  <link rel="modulepreload" href="/mortar-map-2f42498b32815f0b.js" crossorigin="anonymous" integrity="sha384-N/t3/D7LjcP0zwEcDMslOSTXRWmNhyNkrsIRTI0TavygXAJxQHNJVsn4+pcT0UUu"><link rel="preload" href="/mortar-map-2f42498b32815f0b_bg.wasm" crossorigin="anonymous" integrity="sha384-cUwLLdFCQiZfJmBVTEKdVx35zHZD7M9Af78pqNYIhGKBS0XWLAdRsLAJx0BUo+7f" as="fetch" type="application/wasm"></head>
+</html>
